@@ -11,7 +11,7 @@ function startAnim() {
     star.style.width = '50px';
     star.style.position = 'absolute';
     star.style.top = '440px';
-    let starLeft = -100;
+    let starLeft = -10;
     let angle = 0;
     star.style.zIndex = 100;
     star.classList.add('star');
@@ -20,11 +20,11 @@ function startAnim() {
     let newStar = document.querySelector('.star');
 
     let timer = setInterval(()=>{
-        starLeft += 10;
+        starLeft += 1;
         angle += 10;
-        newStar.style.left = starLeft + 'px';
+        newStar.style.left = starLeft + 'vw';
         newStar.style.transform = 'rotate(' + angle + 'deg)';
-        if (starLeft > 1500) {
+        if (starLeft > 100) {
             clearInterval(timer);
             newStar.remove();
         }
