@@ -5,7 +5,6 @@ function startAnim() {
     if (document.querySelector('.star')) {
         document.querySelector('.star').remove();
     }
-    const stars = [];
     let star = document.createElement('img');
     star.src = 'img/shuriken.png';
     star.style.position = 'absolute';
