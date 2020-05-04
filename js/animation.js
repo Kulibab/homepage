@@ -5,10 +5,8 @@ function startAnim() {
     if (document.querySelector('.star')) {
         document.querySelector('.star').remove();
     }
-    const stars = [];
     let star = document.createElement('img');
-    star.src = '../img/kisspng-shuriken-weapon-kunai-knife-ninja-ninja-5aced6504c0606.9975793315235047203114.png';
-    star.style.width = '50px';
+    star.src = 'img/shuriken.png';
     star.style.position = 'absolute';
     star.style.top = '440px';
     let starLeft = -10;
